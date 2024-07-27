@@ -1,0 +1,60 @@
+.sidebar {
+    position: fixed;
+    top: 7%;
+    bottom: 0;
+    left: 0;
+    width: 20%; /* Ajusta el ancho según tus necesidades */
+    background-color: #343a40; /* Color de fondo de la barra lateral */
+    color: white; /* Color del texto */
+    padding: 15px;
+    overflow-y: auto;
+  }
+  
+  .sidebar a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .sidebar a:hover {
+    background-color: #495057; /* Color de fondo al pasar el ratón por encima */
+  }
+main {
+    margin-left: 0; /* Debe ser igual al ancho de la barra lateral */
+    margin-top: 7%; /* Altura de la navbar (ajústala si tu navbar tiene un tamaño diferente) */
+    padding: 5px;
+  }
+
+  .login-container {
+    background-image: url('logoCursos.png'); /* Reemplaza con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-wrapper {
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 10s linear infinite; /* Animación de rotación infinita */
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
